@@ -5,8 +5,6 @@
 
 [click here](https://www.google.com)
 
-![Image](https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg)
-
 > Block this quote
 
 * boom
@@ -20,10 +18,11 @@
 line
 ---
 
-'this is inline code' with backticks
+`this is inline code` with backticks
 
-'''
+```
 this is a 
 code
 block
-'''
+```
+![Image](https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg)
