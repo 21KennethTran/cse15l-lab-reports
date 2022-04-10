@@ -22,15 +22,21 @@ Now that I am remotely connected to this account, I can run several commands to 
 
 ![Image](SS4.png)
 
+After familiarizing myself with the remote computer, I used the `exit` command to go back to my computer. I created a file called `WhereAmI.java` and pasted some lines of code, namely the `.getProperty` method which would return information on the current system the file is in. Next, I ran `scp WhereAmI.java cs15lsp22ajk@ient6.ucsd.edu:~/` to copy that file over to my remote computer.
 
+![Image](SS45.png)
+
+After running this file on my own computer, I logged onto the remote computer useing `ssh` and ran the copied file there. While the file on my own computer outputted information of where it was on my Windows laptop, the other file returned information on the Linux remote computer.
 
 
 ## 5. Getting an SSH Key
 
 ![Image](SS5.png)
 
+In order to speed up the process of logging onto the remote computer using `ssh` or `scp`, I had to generate a SSH key on my client terminal using `ssh key-gen`. I would then save the public key in the `id_rsa.pub` file, then copy that path to the remote computer using the `scp` command. By doing so without setting a password, I could now use `scp` and `ssh` without entering any password.
 
 ## 6. Optimizing Remote Running
 
 ![Image](SS6.png)
 
+Now that there are no passwords involved when using `scp` or `ssh`, I could run several commands in one line of the terminal to change something in the remote computer from my client. In my screenshot, I decided to add another copy of th `WhereAmI.java` file to the remote computer, and then list all the current files in the remote computer. I was able to separate different commands with a `;`, and stay on the client terminal after the command by using `"ls"`.
