@@ -26,6 +26,14 @@ After logging onto my remote server account and navigating to the *SkillDemo* fo
 
 ## 3. Copy whole directories with `scp -r`
 
-![Image](Report3/SS3.png)
+![Image](Report3/scp1.png)
+
+In this part of the lab, I attempted to copy over my `markdown-parser` directory over to the remote server. The first screenshot shows how running the `scp -r` along with the absolute path of my directory and file name of the directory in the remote server would copy over the contents of `markdown-parser` over to the new directory.
+
+![Image](Report3/scp2.png)
+
+After logging onto the remote server using `ssh`, I ran the junit tests in this copy of `markdown-parser`, which successfully ran.
+
+
 
 Now that I am remotely connected to this account, I can run several commands to look at what files the account currently has. Some of the ones I have tried in my screenshot are: `cd`, `ls -l`, `ls -a`, `ls -lat`. I also learned that `l` prints out the files in **long format**, `a` prints out **all** files, `t` prints out the files in order **by time**, and that any combination of those key letters after `ls` outputs all of their information.
