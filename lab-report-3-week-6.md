@@ -12,9 +12,17 @@ In this next screenshot, I used the `scp` command to copy over the *DELETEAFTER.
 
 ## 2. Setup Github Access from ieng6
 
-![Image](Report3/SS2.png)
+![Image](Report3/sshGithub1.png)
 
-On VS Code, I opened up a new terminal by navigating through *terminal --> new terminal* at the top of the window. Before remotely connecting, I made sure to have installed [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) for Windows, as well as to make sure I know my [remote account](https://sdacs.ucsd.edu/~icc/index.php). The last step would be to run `ssh cs15lsp22ajk@ieng6.ucsd.edu` where the **ajk** specifies my given account.
+In this part of the lab, I set up my public key so that I can commit and push changes straight from the terminal. The screenshot above shows the public key that I added to Github on browser.
+
+![Image](Report3/sshGithub2.png)
+
+In the screenshot above, the *id_ed25519* files hold my private/public keys each respectively on my own computer.
+
+![Image](Report3/sshGithub3.png)
+
+After logging onto my remote server account and navigating to the *SkillDemo* folder using the `ssh` and `cd` commands, I decided to create a new file called *newfile.md* to commit onto github. After using several `git` commands including `git push origin main`, I was able to successfully commit these changes without interacting with github, as seen in the [commit history](https://github.com/21KennethTran/SkillDemo/commit/e91bc9df43571f825d5d0a005e577132756f9e40).
 
 ## 3. Copy whole directories with `scp -r`
 
