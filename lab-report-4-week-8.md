@@ -4,7 +4,11 @@
 
 In this part of the lab, I compared link results for 3 provided snippets between [our group's markdown-parser](https://github.com/21KennethTran/markdown-parser) and [group 7's markdown-parser](https://github.com/leahkuruvila/markdown-parser).
 
-In the first snippet of code provided [here](https://github.com/21KennethTran/markdown-parser/blob/main/snip1.md)
+In the first snippet of code provided [here](https://github.com/21KennethTran/markdown-parser/blob/main/snip1.md), I created and ran a test on each repository's respective `MarkdownParseTest.java` files seen in the screenshots below:
+![Image](Report4/snip1.png)
+![Image](Report4/snip01.png)
+
+
 
 ## 2. Snippet 2 Test and Implementation
 
