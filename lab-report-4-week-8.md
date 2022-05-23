@@ -8,6 +8,9 @@ In the first snippet of code provided [here](https://github.com/21KennethTran/ma
 ![Image](Report4/snip1.png)
 ![Image](Report4/snip01.png)
 
+As seen in the first screenshot, which was my lab group's chosen implementation of `MarkdownParse`, our actual outcome was nothing, while the expected outcome was supposed to include *'google.com, google.com, ucsd.edu*. The reason for this error was because of our logical implementation that would not count a link unless it had *https://*. If we were to remove this, we would have still not passed the JUnit test, since *url.com* would have counted as a link. I believe that we could implement a <10 line of code that would keep track of back ticks (`) in the md file, that would break the program if a second end back tick were inserted anywhere inside the link syntax.
+
+In the second screenshot, I see a similar problem. This group, however, got all of the links, plus *url.com* in their program, so there would be less edits needed to implement code that would run the correct output. I would also add code that would break the program if a second back tick were inserted in the link syntax.
 
 
 ## 2. Snippet 2 Test and Implementation
