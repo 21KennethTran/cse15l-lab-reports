@@ -26,3 +26,9 @@ In the second screenshot, showing the other group's output, we see that it was *
 
 ## 3. Snippet 3 Test and Implementation
 
+Lastly, I also created tests and ran them in both repository's `MarkdownParseTest.java` for the third snippet found [here](https://github.com/21KennethTran/markdown-parser/blob/main/snip3.md).
+
+![Image](Report4/snip3.png)
+![Image](Report4/snip03.png)
+
+For the two screenshots above, the correct list of links should only include *https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule*. Disregarding the portion of our group code that only accounted for links that had *https://*, we could have fixed our program finding links by breaking whenever there are line breaks inbetween brackets and parentheses. Although I am not particularly sure how line breaks are read, since the only link that works also took up multiple lines, but for both my group and the other group, looking for line breaks would be the best implementation.
