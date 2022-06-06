@@ -16,4 +16,10 @@ We see on the right that the preview does not highlight any links, meaning that 
 
 ## 3. Comparing Results from File 194.md
 
-In this second comparison for [194.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/14.md) seen in the screenshot in **Section 1**, 
+In this second comparison for [194.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/14.md) seen in the screenshot in **Section 1**, my `markdown-parse` outputted `[]` which means that it found no valid links, while the other `markdown-parse` outputted `[url]` meaning that it caught *url* as a link. However, when checking with the [CommonMark website](https://spec.commonmark.org/dingus/) here:
+
+![Image](Report5/commonMark2.png)
+
+We see that on the right, the preview highlights **Foo*bar]** as a possible link. Upon further inspection of what was given in the file, I found that the first line in Markdown defines the link, *my_(url)*, with the title **Foo*bar]** and tag, *title (with parens)*, while the following line displays that as a link.
+
+In this case, both implementations are wrong. One way to fix this is to look for a colon (:) right after the close bracket and including everything between it and the next space to be a valid link. At the same time, the program should also keep whatever is in the brackets in memory, inclusive of the brackets, in order to keep track of how many times this link is displayed after its definition.
